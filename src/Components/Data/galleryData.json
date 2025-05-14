@@ -1,0 +1,58 @@
+{
+    "1995": [
+        {
+            "title": "Event 1",
+            "text": "Text for 1995",
+            "image": "/images/1995/1.jpg"
+        }
+    ],
+    "1996": [
+        {
+            "title": "Another 1996 event",
+            "text": "Text here",
+            "image": "/images/1996/1.jpg"
+        }
+    ],
+    "1997": [
+        {
+            "title": "Event 1",
+            "text": "Text for 1995",
+            "image": "/images/1995/1.jpg"
+        }
+    ],
+    "1998": [
+        {
+            "title": "Another 1996 event",
+            "text": "Text here",
+            "image": "/images/1996/1.jpg"
+        }
+    ],
+    "1999": [
+        {
+            "title": "Event 1",
+            "text": "Text for 1995",
+            "image": "/images/1995/1.jpg"
+        }
+    ],
+    "2000": [
+        {
+            "title": "Another 1996 event",
+            "text": "Text here",
+            "image": "/images/1996/1.jpg"
+        }
+    ],
+    "2001": [
+        {
+            "title": "Event 1",
+            "text": "Text for 1995",
+            "image": "/images/1995/1.jpg"
+        }
+    ],
+    "2002": [
+        {
+            "title": "Another 1996 event",
+            "text": "Text here",
+            "image": "/images/1996/1.jpg"
+        }
+    ]
+}
