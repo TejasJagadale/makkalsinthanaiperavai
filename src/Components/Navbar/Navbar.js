@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Navbar,
-  Nav,
-  Container,
-  NavDropdown,
-  Offcanvas,
-  Button
-} from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown, Offcanvas, Button} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
@@ -14,11 +7,11 @@ import "./Navbar.css";
 const CustomNavbar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [showTimeline, setShowTimeline] = useState(false);
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
   const handleClose = () => setShowOffcanvas(false);
   const handleShow = () => setShowOffcanvas(true);
   const toggleTimeline = () => setShowTimeline(!showTimeline);
-  const toggleMore = () => setShowMore(!showMore);
+  // const toggleMore = () => setShowMore(!showMore);
 
   return (
     <>

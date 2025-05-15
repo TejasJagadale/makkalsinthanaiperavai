@@ -9,7 +9,7 @@
   line-height: 32px;
 }
 
-.arimugam{
+.arimugam {
   color: #023047;
 }
 
@@ -120,9 +120,20 @@
   padding: 20px;
 }
 
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 .icon-image {
   height: 80px;
   width: 80px;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .peravai {

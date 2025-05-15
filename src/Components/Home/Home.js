@@ -39,8 +39,10 @@ const Home = () => {
     }
   };
 
+  const isMobile1 = window.innerWidth <= 768;
+
   const containerVariants1 = {
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: isMobile1 ? 0 : -100 },
     visible: {
       opacity: 1,
       x: 0,
@@ -54,7 +56,7 @@ const Home = () => {
   };
 
   const containerVariants2 = {
-    hidden: { opacity: 0, x: 100 },
+    hidden: { opacity: 0, x: isMobile1 ? 0 : 100 },
     visible: {
       opacity: 1,
       x: 0,
@@ -68,7 +70,7 @@ const Home = () => {
   };
 
   const containerVariants3 = {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: isMobile1 ? 0 : 100 },
     visible: {
       opacity: 1,
       y: 0,
@@ -141,7 +143,7 @@ const Home = () => {
           variants={containerVariants1}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
         >
           <div className="col-12 col-md-6 text-start mb-4 mb-md-0">
             <h2 className="fsw-1 arimugam">அறிமுகம்</h2>
@@ -185,7 +187,7 @@ const Home = () => {
           variants={containerVariants2}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
         >
           <div className="col-12 col-md-6 text-center">
             <img
@@ -231,7 +233,7 @@ const Home = () => {
             variants={containerVariants3}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
           >
             <div className="peravai1">
               <img src="/images/image2.png" alt="" className="image2" />
@@ -248,7 +250,7 @@ const Home = () => {
                   variants={containerVariants1}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, margin: "-100px" }}
+                  viewport={{ once: true }}
                 >
                   மக்கள் சிந்தனைப் பேரவையின் நிறுவனர் த. ஸ்டாலின் குணசேகரன்.
                   இவர் தனது பத்தாவது வயதில் 32 சக பள்ளி மாணவர்களை ஒன்றிணைத்து
@@ -302,7 +304,7 @@ const Home = () => {
           variants={containerVariants3}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
         >
           <h2 className="fsw-1 jothih2">பாரதி ஜோதி</h2>
           <div className="barathijothi">
@@ -310,7 +312,7 @@ const Home = () => {
               variants={containerVariants2}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true }}
             >
               <img src="/images/image3.png" alt="" className="image3" />
             </motion.div>
@@ -319,7 +321,7 @@ const Home = () => {
                 variants={containerVariants3}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true }}
               >
                 ஈரோடு கருங்கல்பாளையத்தில் 'மனிதறுக்கு மரணமில்லை' என்ற தலைப்பில்
                 பாரதியாற்றிய இறுதிப் பேருரையை இன்றைய தலைமுறைக்கு நினைவூட்டும்
@@ -341,7 +343,7 @@ const Home = () => {
             variants={containerVariants1}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
           >
             <h2 className="fsw-1 sinthanaih2">மக்கள் சிந்தனைப் பேரவை</h2>
           </motion.div>
@@ -349,7 +351,7 @@ const Home = () => {
             variants={containerVariants2}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
           >
             <img src="/images/image4.png" alt="" className="image4" />
           </motion.div>
@@ -358,7 +360,7 @@ const Home = () => {
               variants={containerVariants3}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true }}
             >
               இது ஒரு சாதி, மத, அரசியல் கட்சி சார்பற்ற பொதுநல
               அமைப்பாகும்.1998இல் ஈரோடு நகரில் தொடங்கப்ட்ட இவ்வமைப்பு சென்ற
@@ -380,7 +382,7 @@ const Home = () => {
             variants={containerVariants1}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
           >
             <h2 className="fsw-1 jothih3">
               பேரவையின் ஜப்பான் கிளை சார்பில் பாரதி விழா
@@ -390,7 +392,7 @@ const Home = () => {
             variants={containerVariants2}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
           >
             <img src="/images/image5.png" alt="" className="image5" />
           </motion.div>
@@ -399,7 +401,7 @@ const Home = () => {
               variants={containerVariants3}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true }}
             >
               மக்கள் சிந்தனை பேரவையின் கால் நூற்றாண்டு காலத் தொடர் சேவை -
               தொடர்ச்சியான இயக்கம் - ஈரோடு பாரதி விழா - ஈரோடு புத்தகத் திருவிழா
@@ -449,7 +451,7 @@ const Home = () => {
           variants={containerVariants1}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
         >
           <div>
             <img src="/images/image8.png" alt="" className="image7" />
@@ -459,7 +461,7 @@ const Home = () => {
           variants={containerVariants2}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
         >
           <div>
             <div>
